@@ -1,0 +1,32 @@
+<div class="topcoat-navigation-bar">
+    <div class="topcoat-navigation-bar__item left quarter">
+        <a class="topcoat-icon-button--quiet back-button" href="#">
+          <span class="topcoat-icon topcoat-icon--back"></span>
+        </a>
+    </div>
+    <div class="topcoat-navigation-bar__item center half">
+        <h1 class="topcoat-navigation-bar__title">Hospital Information</h1>
+    </div>
+</div>
+
+<div class='details'>
+    <img class='employee-image' src='pics/<%= name %>.jpg'/><h1 style="color:#58C0FF; margin-right:25px; float: right;">Rank: <%= rank %></h1>
+    <h1><%= name %></h1>
+    <h2><%= city %></h2>
+    <h2><%= type %></h2>
+    <span class="location"></span>
+    <div class="topcoat-list__container scroller">
+        <ul class="topcoat-list list actions">
+		
+            <li class="topcoat-list__item"><a href="#coq/<%= id %>"><p>Cost of Quality</p><p><%= coq %></p><div class="action-icon icon-info"/></a></li>
+            <li class="topcoat-list__item"><a href="#cost/<%= id %>"><p>Cost</p><p><%= cost %></p><div class="action-icon icon-info"/></a></li>
+            <li class="topcoat-list__item"><a href="#quality/<%= id %>"><p>Quality</p><p><%= quality %></p><div class="action-icon icon-info"/></a></li>
+            <li class="topcoat-list__item"><a href="tel:<%= phone %>"><p>Call Hospital</p><p><%= phone %></p><div class="action-icon icon-call"></div></a></li>
+            <li class="topcoat-list__item"><a href="#hospitals/<%= id %>/map"><p>Location</p><p><%= city %></p><div class="action-icon icon-location"></div></a></li>
+            <li class="topcoat-list__item"><a href="mailto:<%= email %>"><p>Email</p><p><%= email %></p><div class="action-icon icon-mail"></div></a></li>
+            <li class="topcoat-list__item"><a href="<%= website %>"><p>Website</p><p><%= website %></p><div class="action-icon icon-web"></div></a></li>
+            <li class="topcoat-list__item"><a href="http://twitter.com/palmettohealth"><p>Twitter Feed</p><p><%= twitterId %></p><div class="action-icon icon-twitter"></div></a></li>
+        </ul>
+    </div>
+</div>
+        

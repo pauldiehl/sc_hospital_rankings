@@ -1,0 +1,27 @@
+<div class="topcoat-navigation-bar">
+    <div class="topcoat-navigation-bar__item left quarter">
+        <a class="topcoat-icon-button--quiet back-button" href="#">
+            <span class="topcoat-icon topcoat-icon--back"></span>
+        </a>
+    </div>
+    <div class="topcoat-navigation-bar__item center half">
+        <h1 class="topcoat-navigation-bar__title">Cost of Quality</h1>
+    </div>
+</div>
+
+<div class="details">
+    <img src='pics/<%= name %>.jpg'/>
+    <h1><%= name %></h1>
+    <h2><%= city %></h2>
+	<h2><%= type %></h2>
+</div>
+
+<div style="color:#58C0FF; padding:0 0 5px 5px">
+<p>Cost of quality (CoQ) is a summary metric that helps us rank a hospital against its peers. The actual calculation of CoQ is not provided as it does not prove useful to patients in assessing hospitals. 
+However, the percentage difference between the hospital's CoQ and the state average CoQ assists patients in optimizing their hospital selection.</p>
+<p>CoQ variance is determined by three calculations:</p>
+<p><b>1) Average total charges</b> for <%= name %> was divided by its <b>total performance score</b>. In other words, we divided the average <b>cost</b> of an individual patient by the <b>quality</b> that the hospital provides.</p>
+<p>2) The same calculation was then made at the state level. </p>
+<p> 3) The percentage difference between the two rates was found in order to produce its current variance.</p>
+<p><i>Outpatient and Inpatient Charge data and Total Performance Scores as of 2010 were extracted from <a href="https://data.medicare.gov/data/hospital-compare">data.medicare.gov/data/hospital-compare.</a></i></p>
+</div>

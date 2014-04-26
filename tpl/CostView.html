@@ -1,0 +1,27 @@
+<div class="topcoat-navigation-bar">
+    <div class="topcoat-navigation-bar__item left quarter">
+        <a class="topcoat-icon-button--quiet back-button" href="#">
+            <span class="topcoat-icon topcoat-icon--back"></span>
+        </a>
+    </div>
+    <div class="topcoat-navigation-bar__item center half">
+        <h1 class="topcoat-navigation-bar__title">Cost</h1>
+    </div>
+</div>
+
+<div class="details">
+    <img src='pics/<%= name %>.jpg'/>
+    <h1><%= name %></h1>
+    <h2><%= city %></h2>
+	<h2><%= type %></h2>
+</div>
+
+<div style="color:#58C0FF; padding:0 0 5px 5px">
+<p>In July 2013, Centers for Medicare & Medicaid Services (CMS) officially released hospital charge data to the public. The charge data covered the top 100 inpatient charges (including over 20 Diagnoses Related Groups (DRG)) as well as over 40 different outpatient charges (including over 10 Ambulatory Patient Classifications (APC)) per hospital. Not all hospitals offer every service.</p>
+<p>Though the charge data itself is useful, it is not presented here as the purpose of this application is to compare hospitals. The comparison figure provided for <%= name %>, however, gives a description on how much the average cost for a patient at that hospital varies from the state.</p>
+<p>To calculate the variance, we first averaged out each charge across all hospitals. Each average charge was then applied to every hospitals that did not carry that associated service in order to normalize the data. With a full chart of data, each hospitals' charges was then averaged out.</p>
+<p>These averages were aggregated in order to find the state average cost per patient. After finding this, the percentage difference between the two rates was found in order to produce its current variance.</p>
+<p><i>Out patient and Inpatient charge data as of 2010 were extracted from <a href="https://data.medicare.gov/data/hospital-compare">data.medicare.gov/data/hospital-compare.</a></i> An additional representation of charge data can be found at <a href="http://opscost.com">opscost.com.</a></p>
+</div>
+
+
